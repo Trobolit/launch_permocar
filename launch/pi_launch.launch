@@ -1,12 +1,16 @@
 <launch>
  
-  <!-- change ip -->
-   <env name="ROS_IP" value="10.9.0.3"/>
-
-  <!-- motorcomm node -->
-   <node pkg="motorcomm" type="motorcomm_node" name="motorcomm"/>
+	<!-- change ip -->
+	<env name="ROS_IP" value="10.9.0.3"/>
+	
+	<!-- motorcomm node -->
+	<node pkg="motorcomm" type="motorcomm_node" name="motorcomm"/>
   
-  <!-- engine_mgmt node -->
-   <node pkg="engine_mgmt" type="engine_mgmt" name="engine_mgmt"/>
+	<!-- engine_mgmt node -->
+	<node pkg="engine_mgmt" type="engine_mgmt" name="engine_mgmt"/>
+	
+	<!-- LMS1xx node -->
+	<node pkg="lsm1xx" type="LMS1xx_node" name="lms1xx"/>
+
 
 </launch>
