@@ -10,7 +10,9 @@
 	<node pkg="engine_mgmt" type="engine_mgmt" name="engine_mgmt"/>
 	
 	<!-- LMS1xx node -->
-	<node pkg="lms1xx" type="LMS1xx_node" name="lms1xx"/>
+	<include file="$(find lms1xx)/launch/LMS1xx.launch"/>
+
+
 
 
 </launch>
