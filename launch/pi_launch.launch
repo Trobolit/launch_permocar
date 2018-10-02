@@ -9,4 +9,10 @@
 	<!-- encodercomm node -->
 	<node pkg="encodercomm" type="encodercomm_node" name="encodercomm"/>
 
+	<!-- coll_detect_node -->
+	<node pkg="coll_detect" type="coll_detect" name="coll_detect"/>
+
+	<!-- LMS1xx node -->
+	<include file="$(find lms1xx)/launch/LMS1xx.launch"/>
+
 </launch>
