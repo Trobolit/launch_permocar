@@ -11,8 +11,10 @@
 
 	<!-- coll_detect_node -->
 	<node pkg="coll_detect" type="coll_detect" name="coll_detect"/>
+	
+	<!-- relaycomm_node -->
+	<node pkg="relaycomm" type="relaycomm_node" name="relaycomm"/>
 
-	<!-- LMS1xx node -->
-	<include file="$(find lms1xx)/launch/LMS1xx.launch"/>
-
+	<!-- settings -->
+ 	<node pkg="settings" type="settings" name="settings"/>
 </launch>
