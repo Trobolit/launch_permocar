@@ -17,4 +17,17 @@
 
 	<!-- settings -->
  	<node pkg="settings" type="settings" name="settings"/>
+
+	<!-- nmea_navsat_driver node-->
+	<node pkg="nmea_navsat_driver" type="nmea_serial_driver" name="nmea_serial_driver">
+	<param name="port" value="/dev/ttyUSB0"/>
+	<param name="baud" value="9600"/>
+	</node>
+
+	<!-- LMS1xx node -->
+	<include file="$(find lms1xx)/launch/LMS1xx.launch"/>
+
+	<!-- vw_generator node -->
+	<node pkg="vw_generator" type="vw_generator_node" name="vw_generator"/>
+
 </launch>
