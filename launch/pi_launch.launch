@@ -29,5 +29,9 @@
 
 	<!-- vw_generator node -->
 	<node pkg="vw_generator" type="vw_generator_node" name="vw_generator"/>
-
+	
+	<!-- kalman filter -->
+	<node pkg="kalmanfilter" type="kalmanfilter" name="kalmanfilter">
+	<param name="loop_rarte" value="20"/>
+	</node>
 </launch>
